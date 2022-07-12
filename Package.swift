@@ -9,7 +9,8 @@ let package = Package(
         .library(name: "PlotView", targets: ["PlotView"]),
         .library(name: "StaffView", targets: ["StaffView"]),
         .library(name: "RhythmView", targets: ["RhythmView"]),
-        .library(name: "ScoreView", targets: ["ScoreView"])
+        .library(name: "ScoreView", targets: ["ScoreView"]),
+        .library(name: "StaffModel", targets: ["StaffView"])
     ],
     dependencies: [
        .package(url: "https://github.com/dn-m/Graphics", from: "0.4.1"),
