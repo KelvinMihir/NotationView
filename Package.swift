@@ -7,7 +7,7 @@ let package = Package(
     name: "NotationView",
     products: [
         .library(name: "PlotView", targets: ["PlotView"]),
-//         .library(name: "StaffModel", targets: ["StaffModel"]),
+        .library(name: "StaffModel", targets: ["StaffModel"]),
         .library(name: "StaffView", targets: ["StaffView"]),
         .library(name: "RhythmView", targets: ["RhythmView"]),
         .library(name: "ScoreView", targets: ["ScoreView"]),
@@ -20,7 +20,7 @@ let package = Package(
     targets: [
 
         // Sources
-//         .target(name: "StaffModel", dependencies: ["StaffView"]),
+        .target(name: "StaffModel", dependencies: ["StaffView"]),
         .target(name: "PlotView", dependencies: ["PlotModel", "Rendering"]),
         .target(name: "StaffView", dependencies: ["PlotView", "StaffModel"]),
         .target(name: "RhythmView", dependencies: ["SpelledRhythm", "SpelledPitch", "Rendering"]),
