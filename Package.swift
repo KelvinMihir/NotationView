@@ -24,6 +24,7 @@ let package = Package(
         .target(name: "PlotView", dependencies: ["PlotModel", "Rendering"]),
         .target(name: "StaffView", dependencies: ["PlotView"]),
         .target(name: "RhythmView", dependencies: ["Rendering", "SpelledRhythm"]),
+        .target(name: "SpelledRhythm", dependencies: ["Rendering"]),
         .target(
             name: "ScoreView",
             dependencies: [
