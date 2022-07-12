@@ -23,7 +23,7 @@ let package = Package(
 //         .target(name: "StaffModel", dependencies: ["StaffView"]),
         .target(name: "PlotView", dependencies: ["PlotModel", "Rendering"]),
         .target(name: "StaffView", dependencies: ["PlotView", "StaffModel"]),
-        .target(name: "RhythmView", dependencies: ["SpelledPitch", "Rendering"]),
+        .target(name: "RhythmView", dependencies: ["SpelledRhythm", "Rendering"]),
 
         .target(
             name: "ScoreView",
