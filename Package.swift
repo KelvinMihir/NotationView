@@ -9,7 +9,7 @@ let package = Package(
         .library(name: "PlotView", targets: ["PlotView"]),
 //         .library(name: "StaffModel", targets: ["StaffModel"]),
         .library(name: "StaffView", targets: ["StaffView"]),
-        .library(name: "RhythmView", targets: ["RhythmView"]),
+        .library(name: "RhythmView", targets: ["RhythmView", "SpelledRhythm"]),
         .library(name: "ScoreView", targets: ["ScoreView"]),
         
     ],
