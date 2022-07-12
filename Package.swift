@@ -9,7 +9,7 @@ let package = Package(
         .library(name: "PlotView", targets: ["PlotView"]),
 //         .library(name: "StaffModel", targets: ["StaffModel"]),
         .library(name: "StaffView", targets: ["StaffView"]),
-        .library(name: "RhythmView", targets: ["RhythmView", "SpelledRhythm"]),
+        .library(name: "RhythmView", targets: ["RhythmView"]),
         .library(name: "ScoreView", targets: ["ScoreView"]),
         
     ],
@@ -24,7 +24,7 @@ let package = Package(
         .target(name: "PlotView", dependencies: ["PlotModel", "Rendering"]),
         .target(name: "StaffView", dependencies: ["PlotView"]),
         .target(name: "RhythmView", dependencies: ["Rendering", "SpelledRhythm"]),
-        .target(name: "SpelledRhythm", dependencies: ["Rendering"]),
+
         .target(
             name: "ScoreView",
             dependencies: [
