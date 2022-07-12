@@ -21,7 +21,7 @@ let package = Package(
 
         // Sources
 //         .target(name: "StaffModel", dependencies: ["StaffView"]),
-        .target(name: "PlotView", dependencies: ["PlotModel", "Rendering"]),
+        .target(name: "PlotView", dependencies: ["Rendering"]),
         .target(name: "StaffView", dependencies: ["PlotView"]),
         .target(name: "RhythmView", dependencies: ["Rendering"]),
 
