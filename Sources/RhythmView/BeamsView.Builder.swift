@@ -7,7 +7,7 @@
 //
 
 import DataStructures
-import SpelledRhythm
+// import SpelledRhythm
 import Geometry
 import Path
 import Rendering
