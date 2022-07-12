@@ -8,7 +8,7 @@ let package = Package(
     products: [
         .library(name: "PlotView", targets: ["PlotView"]),
 //         .library(name: "StaffModel", targets: ["StaffModel"]),
-//         .library(name: "StaffView", targets: ["StaffView", "StaffModel"]),
+        .library(name: "StaffView", targets: ["StaffView", "StaffModel"]),
         .library(name: "RhythmView", targets: ["RhythmView"]),
         .library(name: "ScoreView", targets: ["ScoreView"]),
         
