@@ -7,9 +7,10 @@ let package = Package(
     name: "NotationView",
     products: [
         .library(name: "PlotView", targets: ["PlotView"]),
-        .library(name: "StaffView", targets: ["StaffView", "StaffModel"]),
+        .library(name: "StaffView", targets: ["StaffView"]),
         .library(name: "RhythmView", targets: ["RhythmView"]),
         .library(name: "ScoreView", targets: ["ScoreView"]),
+        .library(name: "StaffModel", targets: ["StaffModel"])
     ],
     dependencies: [
        .package(url: "https://github.com/dn-m/Graphics", from: "0.4.1"),
@@ -26,7 +27,7 @@ let package = Package(
             dependencies: [
                 "Rendering",
                 "PlotView",
-//                 "StaffView",
+                "StaffView",
                 "RhythmView"
             ]
         ),
